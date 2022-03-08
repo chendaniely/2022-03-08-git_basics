@@ -21,4 +21,5 @@
 
 - `git checkout <HASH>`: take you do <HASH> location
     - `git checkout main`: take you back to the `main` branch
+- `git checkout <HASH> <FILE>`: retore <FILE> from version in <HASH>
 
