@@ -1,4 +1,4 @@
-# 2022 03 08: Git Basics
+# 2022-03-08: Git Bacics
 
 - `git init`: initialize git repository in current location
     - make sure you do not nest git repositories
@@ -23,7 +23,7 @@
     - `git checkout main`: take you back to the `main` branch
 - `git checkout <HASH> <FILE>`: retore <FILE> from version in <HASH>
 
-## REMOTES
+# Remotes
 
 - `ssh-keygen`: create an ssh key
     - copy your `id_rsa.pub` into your ssh keys in your account
@@ -31,6 +31,9 @@
 
 - `git remote add origin <URL>`: sets up the remote called origin with <URL>
 - `git rmote rm origin`: remote remote (can use this to "rename")
-    
+
 - `git push origin main`: sends code from computer to remote
 - `git pull origin main`: updates local code with remote code
+    - technically `git pull` is `git fetch` + `git merge`
+
+- `git fetch --all`: updates history with all remote
