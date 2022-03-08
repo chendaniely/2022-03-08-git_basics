@@ -1,0 +1,224 @@
+   38  git config --global user.name "Daniel Chen"
+   39  git config --global user.email "chendaniely@gmail.com"
+   40  git config --global core.editor "nano -w"
+   41  git config --global init.defaultBranch main
+   42  git --version
+   43  git config --list
+   44  mkdir git
+   45  cd git
+   46  explorer .
+   47  open .
+   48  xdg-open .
+   49  mkdir 2022-03-08-git_basics
+   50  cd 2022-03-08-git_basics/
+   51  git init
+   52  ls
+   53  ls -a
+   54  git status
+   55  nano README.md
+   56  git status
+   57  git add README.md
+   58  git status
+   59  git commit
+   60  git status
+   61  Warning- LF will be replaced by CRLF in 2022-03-08-git_basics/README.md. The file will have its original line endings in your working directory
+   62  git status
+   63  nano README.md
+   64  git status
+   65  git commit
+   66  git status
+   67  git add README.md
+   68  git status
+   69  git commit -m "add + commit + commit -m"
+   70  git status
+   71  git log
+   72  q
+   73  git log
+   74  git log --oneline
+   75  git status
+   76  git diff HEAD~1 README.md
+   77  git log --oneline
+   78  git diff ffcb52a README.md
+   79  nano README.md
+   80  git status
+   81  git diff
+   82  git diff README.md
+   83  nano README.md
+   84  git diff --help
+   85  git diff
+   86  git add README.md
+   87  git status
+   88  git diff
+   89  git diff --staged
+   90  nano README.md
+   91  git status
+   92  history
+   93  git status
+   94  git diff
+   95  git diff --staged
+   96  git status
+   97  git commit -m "log and diff"
+   98  git status
+   99  git diff
+  100  git add README.md
+  101  git status
+  102  git diff --staged
+  103  git commit -m "diff --staged"
+  104  git status
+  105  git log --online
+  106  git log --oneline
+  107  history
+  108  git log --oneline
+  109  git diff ffcb52a
+  110  git log --oneline
+  111  git checkout ffcb52a
+  112  nano README.md
+  113  git status
+  114  git checkout main
+  115  git status
+  116  git log --oneline
+  117  git checkout ffcb52a
+  118  git log --oneline
+  119  git log --oneline --all
+  120  git checkout main
+  121  git log --oneline --all
+  122  nano README.md
+  123  git status
+  124  git diff README.md
+  125  git add README.md
+  126  git status
+  127  git commit -m "log --all and checkout commit"
+  128  git status
+  129  git status
+  130  git checkout main
+  131  git status
+  132  nano README.md
+  133  git log --oneline
+  134  ls
+  135  rm README.md
+  136  ls
+  137  git status
+  138  git restore README.md
+  139  git status
+  140  ls
+  141  rm README.md
+  142  git status
+  143  git add --all
+  144  git status
+  145  git commit -m "delete README file"
+  146  git status
+  147  git log --oneline
+  148  git checkout 63428c4 README.md
+  149  git status
+  150  ls
+  151  git commit -m "restore readme file"
+  152  git status
+  153  nano README.md
+  154  git status
+  155  git add README.md
+  156  git status
+  157  git commit -m "how to restore file from history"
+  158  git status
+  159  git status
+  160  git checkout main
+  161  git checkout master
+  162  mkdir output code
+  163  git status
+  164  git --version
+  165  git log --oneline
+  166  git log --oneline --all
+  167  git status
+  168  ls
+  169  cd code/
+  170  touch analysis.py
+  171  git status
+  172  cd ..
+  173  git status
+  174  git add code/analysis.py
+  175  git status
+  176  git commit -m "add empty analysis.py"
+  177  gits tatus
+  178  git status
+  179  ls
+  180  touch output/.gitkeep
+  181  git status
+  182  git add output/
+  183  git status
+  184  git commit -m "create output folder"
+  185  git status
+  186  touch output/fig1.png
+  187  git status
+  188  nano .gitignore
+  189  pwd
+  190  nano .gitignore
+  191  git status
+  192  touch docs.pdf
+  193  git status
+  194  touch output/example.pdf
+  195  git status
+  196  touch ignoreme.txt
+  197  git status
+  198  git add .
+  199  git status
+  200  git commit -m "create ignore file + examples"
+  201  git status
+  202  histoy
+  203  history
+  204  ssh-keygen
+  205  cat /c/Users/Danie/.ssh/git_class.pub
+  206  ls ~/.ssh
+  207  git remote add origin git@github.com:chendaniely/2022-03-08-git_basics.git
+  208  git remote -v
+  209  git push origin main
+  210  cd code/
+  211  cd ..
+  212  git remote rm origin
+  213  git remote add origin git@github.com:chendaniely/2022-03-08-git_basics.git
+  214  mkdir data
+  215  git status
+  216  git push origin main
+  217  git log --oneline --all --graph
+  218  touch data/.gitkeep
+  219  git status
+  220  git status
+  221  git add data/
+  222  git status
+  223  git commit -m "create data folder"
+  224  git status
+  225  git log --oneline --all --graph
+  226  git push origin main
+  227  cat README.md
+  228*
+  229  cat README.md
+  230  git log --oneline --all --graph
+  231  git fetch --all
+  232  git log --oneline --all --graph
+  233  git diff 8d8cca8 README.md
+  234  nano README.md
+  235  git status
+  236  git add README.md
+  237  git commit -m "changes from local for conflit ex"
+  238  git log --oneline --all --graph
+  239  git push origin main
+  240  git pull origin main
+  241  nano README.md
+  242  nano README.md
+  243  git status
+  244  git merge --abourt
+  245  git merge --abort
+  246  cat README.md
+  247  git pull origin main
+  248  nano README.md
+  249  git status
+  250  git add README.md
+  251  git status
+  252  git commit -m "fix conflicts"
+  253  git push origin main
+  254  cd
+  255  cd Desktop/
+  256  git clone git@github.com:chendaniely/2022-03-08-git_basics.git
+  257  cd 2022-03-08-git_basics/
+  258  ls
+  259  git log --oneline --graph --all
+  260  history
+
