@@ -23,3 +23,10 @@
     - `git checkout main`: take you back to the `main` branch
 - `git checkout <HASH> <FILE>`: retore <FILE> from version in <HASH>
 
+## remotes
+
+- `git remote add origin <URL>`: sets up the remote called origin with <URL>
+- `git rmote rm origin`: remote remote (can use this to "rename")
+    
+- `git push origin main`: sends code from computer to remote
+- `git pull origin main`: updates local code with remote code
