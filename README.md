@@ -12,6 +12,7 @@
     - `git log --oneline`: gives you the shortened oneline version of log
 
 - `git diff`: shows you new changes that have not been committed
+- `git diff --staged`: shows you diff for files in staging area
 - `git diff <HASH> <FILE>`: shows you the differences between HASH and current file
     - HEAD~1: HEAD one commit back
     - 3j378dj: or you can use the commit hash directly
