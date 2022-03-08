@@ -1,4 +1,4 @@
-# 2022-03-08-git_basics
+# 2022-03-08: Git Bacics
 
 - `git init`: initialize git repository in current location
     - make sure you do not nest git repositories
@@ -23,7 +23,7 @@
     - `git checkout main`: take you back to the `main` branch
 - `git checkout <HASH> <FILE>`: retore <FILE> from version in <HASH>
 
-## remotes
+## ReMotES
     
 - `ssh-keygen`: create an ssh key
     - copy your `id_rsa.pub` into your ssh keys in your account
