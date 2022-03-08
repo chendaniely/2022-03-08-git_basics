@@ -24,6 +24,10 @@
 - `git checkout <HASH> <FILE>`: retore <FILE> from version in <HASH>
 
 ## remotes
+    
+- `ssh-keygen`: create an ssh key
+    - copy your `id_rsa.pub` into your ssh keys in your account
+    - use the SSH url for github, not HTTPS
 
 - `git remote add origin <URL>`: sets up the remote called origin with <URL>
 - `git rmote rm origin`: remote remote (can use this to "rename")
